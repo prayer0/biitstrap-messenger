@@ -71,6 +71,4 @@ php biitstrap server
 - Some features like challenge signatures that is defined in the technical draft are avoided for gaining speed for this implementation.
 - App doesn't work if funding wallet goes out of balance. It can be found in `config/services.yaml` and can be refunded.
 - Port 80 and 8080 should be accessible.
-- Machines find each other but I couldn't find time to test off-chain messaging on live server. And it may not work on local machine properly.
 - Please use two different (non-local) machines.
-- Wait all js files (there are too many) to be loaded before interaction.

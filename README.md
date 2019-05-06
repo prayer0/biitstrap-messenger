@@ -8,7 +8,7 @@ Biitstrap Messenger is a little PoC messenger that employs this technique. Peers
 
 This is a PoC for demonstraing the technique which may be useful and applicable for many areas such as EE2E messaging, SSH, IoT, remote control, IP-transactions etc.
 
-Devices can be interconnected by using only public keys thanks to this technique.
+Devices can communicate with each other by using only public keys thanks to this technique.
 
 **Video Preview:** https://youtu.be/Ygv1BCiWdGA
 

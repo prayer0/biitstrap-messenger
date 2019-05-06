@@ -14,8 +14,8 @@ Devices can communicate with each other by using only public keys thanks to this
 
 ## Requirements
 
-Requirements: PHP, Composer, MySQL
-Open Ports: 80, 8080 
+- Requirements: PHP, Composer, MySQL
+- Open Ports: 80, 8080 
 
 ## Setup
 

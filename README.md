@@ -2,8 +2,6 @@
 
 > This is a submission for Bitcoin Association Hackathon.
 
-Video Preview: https://youtu.be/Ygv1BCiWdGA
-
 Biitstrap is a technique for bootstrapping a communication channel via a blockchain which is explained here: https://github.com/prayer0/biitstrap/blob/master/doc/README.md. It's useful for every scenario where peers don't know each other's connection details.
 
 Biitstrap Messenger is a little PoC messenger that employs this technique. Peers exchanges their public keys by broadcasting their connection details to the blockchain encryptedly to find each other's location. Then they start communicating off-chain.
@@ -11,6 +9,8 @@ Biitstrap Messenger is a little PoC messenger that employs this technique. Peers
 This is a PoC for demonstraing the technique which may be useful and applicable for many areas such as EE2E messaging, SSH, IoT, remote control, IP-transactions etc.
 
 Devices can be interconnected by using only public keys thanks to this technique.
+
+**Video Preview:** https://youtu.be/Ygv1BCiWdGA
 
 ## Requirements
 

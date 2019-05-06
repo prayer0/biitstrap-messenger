@@ -58,8 +58,8 @@ php biitstrap server
 
 ## Usage
 
-1. Visit first machine's ip with your browser.
-2. Visit second machine's ip with another browser.
+1. Visit first machine's ip on your browser.
+2. Visit second machine's ip on another browser.
 3. Copy second machine's public key.
 4. On first machine's webpage, paste it and invite him to off-chain communication.
 5. On second machine's webpage, there should be and invite alert, confirm it.

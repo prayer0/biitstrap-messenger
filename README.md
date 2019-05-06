@@ -72,3 +72,4 @@ php biitstrap server
 - App doesn't work if funding wallet goes out of balance. It can be found in `config/services.yaml` and can be refunded.
 - Port 80 and 8080 should be accessible.
 - Please use two different (non-local) machines.
+- Please keep JavaScript console open while testing. Some browsers prevent confirm dialogs in unfocused state.

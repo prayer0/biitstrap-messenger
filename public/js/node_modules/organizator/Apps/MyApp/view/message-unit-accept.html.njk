@@ -1,0 +1,11 @@
+<div class="messageunit {{ mode }} accept">
+    <div class="h">
+        <div class="sender">From: {{ sender_pubkey }}</div>
+        <div class="recipient">To: {{ recipient_pubkey }}</div>
+        <div class="tx">Replyto: <a target="_blank" href="https://whatsonchain.com/tx/{{ replyto }}">{{ replyto }}</a></div>
+        <div class="tx">Txid: <a target="_blank" href="https://whatsonchain.com/tx/{{ txid }}">{{ txid }}</a></div>
+    </div>
+    <div class="c">
+        *** On-chain acceptation {% if mode == 'sent' %}sent. Waiting answer..{% else %}received{% endif %} ***
+    </div>
+</div>

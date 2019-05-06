@@ -1,0 +1,172 @@
+@import 'mixin/utilities';
+
+.messenger {
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	position:relative;
+	width:600px;
+	min-width:520px;
+	max-width:100%;
+	margin:0 auto;
+	border-left:1px solid #dadada;
+	border-right:1px solid #dadada;
+	background-color:#fff;
+
+	h1 {
+		font-size:24px;
+		line-height:1;
+		padding:18px;
+		border-bottom:3px double #dadada;
+	}
+
+	h3 {
+		font-size:16px;
+		padding:18px;
+		border-bottom:1px solid #dadada;
+		line-height:1;
+	}
+}
+
+.messenger .instructions {
+	padding:18px;
+	line-height:1.35;
+	border-bottom:3px double #dadada;
+
+	p {
+		&:not(:last-child){
+			margin-bottom:12px;
+		}
+	}
+
+	a {
+		color:#002D94;
+		font-weight:bold;
+		
+		&:hover {
+			text-decoration:underline;
+		}
+	}
+}
+
+.messenger > * {
+	border-bottom:1px solid #dadada;
+}
+
+.messenger table {
+	width:100%;
+
+	th {
+		text-align:left;
+		font-weight:normal;
+	}
+
+	th, td {
+		&:last-child {
+			text-align:right;
+		}
+	}
+}
+
+.messenger .header {
+	.in {
+		padding:18px;
+	}
+
+	.leftcol {	
+		font-size:12px;
+		font-family:Consolas, 'Courier New', monospace;
+
+		> * {
+			&:not(:last-child){
+				margin-bottom:10px;
+			}
+
+			.t {
+				margin-bottom:4px;
+				font-weight:bold;
+			}
+		}
+	}
+}
+
+.inviteform {
+	display:flex;
+	margin-top:12px;
+
+	.l {
+		flex:1;
+		margin-right:12px;
+
+		input {
+			width:100%;
+		}
+	}
+}
+
+.messenger .messages {
+	.messageunit {
+		&:not(:last-child){
+			margin-bottom:18px;
+			border-bottom:1px solid #dadada;
+			padding-bottom:18px;
+		}
+
+		.h {
+			font-size:12px;
+			font-family:'Lucica Console', Consolas, 'Courier New', monospace;
+			margin-bottom:18px;
+
+			> * {
+				&:not(:last-child){
+					margin-bottom:4px;
+				}
+			}
+		}
+
+		a {
+			color:#002D94;
+
+			&:hover {
+				text-decoration:underline;
+			}
+		}
+	}
+
+	.messageunit.received {
+		text-align:left;
+	}
+
+	.messageunit.sent {
+		text-align:right;
+	}
+
+	> .collection {
+		padding:18px;
+	}
+}
+
+.messenger .footer {
+	padding:18px;
+}
+
+.messageform {
+	.form-group {
+		&:not(:last-child){
+			margin-bottom:18px;
+		}	
+	}
+
+	textarea {
+		width:100%;
+		min-width:100%;
+		max-width:100%;
+		min-height:120px;
+		height:120px;
+	}
+
+	.submit-group {
+		margin-top:-9px;
+		text-align:right;
+	}
+}

@@ -1,0 +1,213 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.messenger {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 600px;
+  min-width: 520px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  background-color: #fff; }
+  .messenger h1 {
+    font-size: 24px;
+    line-height: 1;
+    padding: 18px;
+    border-bottom: 3px double #dadada; }
+  .messenger h3 {
+    font-size: 16px;
+    padding: 18px;
+    border-bottom: 1px solid #dadada;
+    line-height: 1; }
+
+.messenger .instructions {
+  padding: 18px;
+  line-height: 1.35;
+  border-bottom: 3px double #dadada; }
+  .messenger .instructions p:not(:last-child) {
+    margin-bottom: 12px; }
+  .messenger .instructions a {
+    color: #002D94;
+    font-weight: bold; }
+    .messenger .instructions a:hover {
+      text-decoration: underline; }
+
+.messenger > * {
+  border-bottom: 1px solid #dadada; }
+
+.messenger table {
+  width: 100%; }
+  .messenger table th {
+    text-align: left;
+    font-weight: normal; }
+  .messenger table th:last-child, .messenger table td:last-child {
+    text-align: right; }
+
+.messenger .header .in {
+  padding: 18px; }
+.messenger .header .leftcol {
+  font-size: 12px;
+  font-family: Consolas, 'Courier New', monospace; }
+  .messenger .header .leftcol > *:not(:last-child) {
+    margin-bottom: 10px; }
+  .messenger .header .leftcol > * .t {
+    margin-bottom: 4px;
+    font-weight: bold; }
+
+.inviteform {
+  display: flex;
+  margin-top: 12px; }
+  .inviteform .l {
+    flex: 1;
+    margin-right: 12px; }
+    .inviteform .l input {
+      width: 100%; }
+
+.messenger .messages .messageunit:not(:last-child) {
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 18px; }
+.messenger .messages .messageunit .h {
+  font-size: 12px;
+  font-family: 'Lucica Console', Consolas, 'Courier New', monospace;
+  margin-bottom: 18px; }
+  .messenger .messages .messageunit .h > *:not(:last-child) {
+    margin-bottom: 4px; }
+.messenger .messages .messageunit a {
+  color: #002D94; }
+  .messenger .messages .messageunit a:hover {
+    text-decoration: underline; }
+.messenger .messages .messageunit.received {
+  text-align: left; }
+.messenger .messages .messageunit.sent {
+  text-align: right; }
+.messenger .messages > .collection {
+  padding: 18px; }
+
+.messenger .footer {
+  padding: 18px; }
+
+.messageform .form-group:not(:last-child) {
+  margin-bottom: 18px; }
+.messageform textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 120px;
+  height: 120px; }
+.messageform .submit-group {
+  margin-top: -9px;
+  text-align: right; }
+
+html, body {
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 13px; }
+
+.container {
+  padding: 0;
+  margin: 0; }
+
+.hide {
+  display: none !important; }
+
+/*# sourceMappingURL=style.css.map */

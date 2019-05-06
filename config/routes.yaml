@@ -1,0 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+invite:
+    path: /api/invite/
+    controller: App\Controller\DefaultController::invite
+    methods: ['POST']
+accept:
+    path: /api/accept/
+    controller: App\Controller\DefaultController::accept
+    methods: ['POST']
+listen:
+    path: /api/listen/
+    controller: App\Controller\DefaultController::listen
+

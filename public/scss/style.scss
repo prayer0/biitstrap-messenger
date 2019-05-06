@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import 'reset';
+@import 'fragment/messenger';
+@import 'mixin/form';
+@import 'mixin/utilities';
+
+html, body {
+	background-color:#fafafa;
+	padding:0;
+	margin:0;
+	height:100%;
+	font-family:'Lucida Sans Unicode', Arial, sans-serif;
+	font-size:13px;
+}
+
+.container {
+	padding:0;
+	margin:0;
+}
+
+.hide {
+	display:none !important;
+}

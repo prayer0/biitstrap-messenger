@@ -1,0 +1,103 @@
+.messenger {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 600px;
+  min-width: 520px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  background-color: #fff; }
+  .messenger h1 {
+    font-size: 24px;
+    line-height: 1;
+    padding: 18px;
+    border-bottom: 3px double #dadada; }
+  .messenger h3 {
+    font-size: 16px;
+    padding: 18px;
+    border-bottom: 1px solid #dadada;
+    line-height: 1; }
+
+.messenger .instructions {
+  padding: 18px;
+  line-height: 1.35;
+  border-bottom: 3px double #dadada; }
+  .messenger .instructions p:not(:last-child) {
+    margin-bottom: 12px; }
+  .messenger .instructions a {
+    color: #002D94;
+    font-weight: bold; }
+    .messenger .instructions a:hover {
+      text-decoration: underline; }
+
+.messenger > * {
+  border-bottom: 1px solid #dadada; }
+
+.messenger table {
+  width: 100%; }
+  .messenger table th {
+    text-align: left;
+    font-weight: normal; }
+  .messenger table th:last-child, .messenger table td:last-child {
+    text-align: right; }
+
+.messenger .header .in {
+  padding: 18px; }
+.messenger .header .leftcol {
+  font-size: 12px;
+  font-family: Consolas, 'Courier New', monospace; }
+  .messenger .header .leftcol > *:not(:last-child) {
+    margin-bottom: 10px; }
+  .messenger .header .leftcol > * .t {
+    margin-bottom: 4px;
+    font-weight: bold; }
+
+.inviteform {
+  display: flex;
+  margin-top: 12px; }
+  .inviteform .l {
+    flex: 1;
+    margin-right: 12px; }
+    .inviteform .l input {
+      width: 100%; }
+
+.messenger .messages .messageunit:not(:last-child) {
+  margin-bottom: 18px;
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 18px; }
+.messenger .messages .messageunit .h {
+  font-size: 12px;
+  font-family: 'Lucica Console', Consolas, 'Courier New', monospace;
+  margin-bottom: 18px; }
+  .messenger .messages .messageunit .h > *:not(:last-child) {
+    margin-bottom: 4px; }
+.messenger .messages .messageunit a {
+  color: #002D94; }
+  .messenger .messages .messageunit a:hover {
+    text-decoration: underline; }
+.messenger .messages .messageunit.received {
+  text-align: left; }
+.messenger .messages .messageunit.sent {
+  text-align: right; }
+.messenger .messages > .collection {
+  padding: 18px; }
+
+.messenger .footer {
+  padding: 18px; }
+
+.messageform .form-group:not(:last-child) {
+  margin-bottom: 18px; }
+.messageform textarea {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 120px;
+  height: 120px; }
+.messageform .submit-group {
+  margin-top: -9px;
+  text-align: right; }
+
+/*# sourceMappingURL=messenger.css.map */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	</head>
+		<title>Biitstrap Messenger</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+	</head>
+	<body>
+        <div class="container">
+           
+            <div class="messenger">
+                <h1>Biitstrap Messenger</h1>
+                <div class="instructions">
+                    <p>Biitstrap is a technique for bootstrapping a communication channel via a blockchain which is explained <a href="https://github.com/prayer0/biitstrap/blob/master/doc/README.md" target="_blank">here</a>. It's useful for every scenario where peers don't know each other's connection details.</p>
+                    
+                    <p>Biitstrap Messenger is a little PoC messenger that employs this technique. Peers exchanges their public keys by broadcasting their connection details to the blockchain encryptedly to find each other's location. Then they start communicating off-chain.</p>
+                    
+                    <p>This is a PoC for demonstraing this technique which may be useful and applicable for many areas such as EE2E messaging, SSH, IoT, remote control, IP-transactions etc.</p>
+                    <p>Devices can be interconnected by using only public keys thanks to this technique.</p>
+                </div>
+                <div class="header">
+                    <h3>Peer Info</h3>
+                    <div class="in">
+                        <div class="leftcol">
+                            <div class="status">
+                                <div class="t">Connection Status</div>
+                                <div class="b">disconnected</div>
+                            </div>
+
+                            <div class="user">
+                                <div class="t">Your Public Key</div>
+                                <div class="b">{{ publicKey }}</div>
+                            </div>
+                            
+                            <div class="peer">
+                                <div class="t">Peer Public Key</div>
+                                <div class="b">undefined</div>
+                            </div>
+                        </div>
+
+                        <form class="inviteform" name="inviteform" action="{{ path('invite') }}" method="POST">
+                            <div class="l">
+                                <input type="text" name="recipient" placeholder="Public Key">
+                            </div>
+                            <div class="r">
+                                <button type="submit">invite to off-chain chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="messages">
+                    <h3>Messages</h3>
+
+                    <div class="collection">
+                        Waiting a peer..
+                    </div>
+                </div>
+                
+                <div class="footer">
+                    <form class="messageform" method="POST" name="messageform">
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="right">
+                                    <textarea name="message" disabled></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group submit-group">
+                            <div class="row">
+                                <div class="right">
+                                    <button type="submit" class="button button--block button--primary" disabled>send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+		<script type="text/javascript">
+        var require = {
+            baseUrl: 'js/node_modules/',
+            paths: {
+                text: 'organizator/Plugins/text',
+                json: 'organizator/Plugins/json',
+                route: 'organizator/Plugins/route',
+                controller: 'organizator/Plugins/controller',
+                xliff: 'organizator/Plugins/xliff',
+                css: 'organizator/Plugins/css'
+            }
+        }
+        </script>
+		<script data-main="../app.min.js" src="js/node_modules/requirejs/require.js"></script>
+	</body>
+</html>

@@ -23,7 +23,7 @@ You need to install the application to 2 separate machines. Then, we'll try to l
 
 Clone repository:
 ```
-git clone https://github.com/prayer0/biitstrap.git
+git clone https://github.com/prayer0/biitstrap-messenger.git
 ```
 
 Install dependencies:

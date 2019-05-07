@@ -6,7 +6,7 @@ Biitstrap is a technique for bootstrapping a communication channel via a blockch
 
 Biitstrap Messenger is a little PoC messenger that employs this technique. Peers exchanges their public keys by broadcasting their connection details to the blockchain encryptedly to find each other's location. Then they start communicating off-chain.
 
-This is a PoC for demonstraing the technique which may be useful and applicable for many areas such as EE2E messaging, SSH, IoT, remote control, IP-transactions etc.
+This is a PoC for demonstraing the technique which may be useful and applicable for many areas such as EE2E messaging, SSH, IoT, remote control, IP-transactions, metanet-internet interactions etc.
 
 Devices can communicate with each other by using only public keys thanks to this technique.
 
